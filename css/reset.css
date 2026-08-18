@@ -1,0 +1,47 @@
+/* Reset universal de márgenes y paddings */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Configuracion base del cuerpo */
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-shoothing: antialiased;
+}
+
+/* Limpieza de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Limpieza de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imanes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Botones e inputs heredan la fuente */
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}

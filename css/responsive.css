@@ -1,0 +1,23 @@
+/* --- DISEÑO RESPONSIVO PARA DISPOSITIVOS MÓVILES Y TABLETS --- */
+
+@media (max-width: 768px) {
+  /* Ajuste del contenedor de navegación para pantallas pequeñas */
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* Ajuste de los enlaces del menú */
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  /* Reducción de márgenes y paddings generales en móviles */
+  .card {
+    padding: 1.5rem;
+  }
+}

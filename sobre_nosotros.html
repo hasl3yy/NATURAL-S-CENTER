@@ -1,1 +1,130 @@
 <link rel="stylesheet" href="./css/styles.css" />
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre el Doctor | Natural's Center</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <div class="logo">NATURAL'S CENTER</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="sobre_nosotros.html" class="active">Sobre el Doctor</a>
+          </li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main style="max-width: 1000px; margin: 3rem auto; padding: 0 2rem">
+      <section style="margin-bottom: 3rem">
+        <h1 style="color: var(--color-primary); margin-bottom: 1rem">
+          Dr. Nelson Castro
+        </h1>
+        <p
+          style="
+            font-size: 1.1rem;
+            color: var(--color-text-muted);
+            margin-bottom: 2rem;
+          "
+        >
+          Medicina Funcional, Integrativa, Regenerativa y Educación para la
+          Salud.
+        </p>
+
+        <!-- CONTENEDOR EN DOS COLUMNAS -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+          "
+        >
+          <!-- Columna de la izquierda: Texto de Filosofía -->
+          <div
+            class="card"
+            style="border-top-color: var(--color-accent); height: 100%"
+          >
+            <h3 style="margin-bottom: 1rem; color: var(--color-primary)">
+              Nuestra Filosofía
+            </h3>
+            <p style="margin-bottom: 1rem">
+              En <strong>Natural's Center</strong> entendemos que la salud
+              integral va más allá de la ausencia de síntomas. Bajo la dirección
+              del Dr. Nelson Castro, aplicamos un enfoque humano y científico
+              centrado en el bienestar profundo del paciente.
+            </p>
+            <p>
+              Creemos firmemente que la
+              <strong>Educación para la Salud</strong> es la clave para que cada
+              persona pueda comprender su cuerpo, prevenir enfermedades y
+              mantener una óptima calidad de vida a largo plazo.
+            </p>
+          </div>
+
+          <!-- Columna de la derecha: La foto de la clínica -->
+          <div>
+            <img
+              src="foto_clinica.jpg"
+              alt="Instalaciones de Natural's Center"
+              style="
+                width: 100%;
+                border-radius: var(--border-radius);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                display: block;
+              "
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 style="color: var(--color-primary); margin-bottom: 1.5rem">
+          Pilares de Atención Médica
+        </h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+          "
+        >
+          <div class="card">
+            <h4>Funcional</h4>
+            <p style="margin-top: 0.5rem; color: var(--color-text-muted)">
+              La investigación de la causa de la enfermedad para tratar el
+              origen y no solo los síntomas.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Integrativa</h4>
+            <p style="margin-top: 0.5rem; color: var(--color-text-muted)">
+              Combinación de tratamientos orientada a potenciar los resultados
+              de recuperación.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Regenerativa</h4>
+            <p style="margin-top: 0.5rem; color: var(--color-text-muted)">
+              Terapias enfocadas en reparar los tejidos u órganos dañados del
+              organismo.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Natural's Center | Dr. Nelson Castro</p>
+      <p>14 calle A 10-22 zona 1, Clínica #2 | Tel: 5817-7458</p>
+    </footer>
+  </body>
+</html>
