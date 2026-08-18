@@ -1,7 +1,7 @@
-/* --- DISEÑO RESPONSIVO PARA DISPOSITIVOS MÓVILES Y TABLETS --- */
+/* --- DISEÑO RESPONSIVO --- */
 
+/* 1. Estilos exclusivos para celulares y pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
-  /* Ajuste del contenedor de navegación para pantallas pequeñas */
   .nav-container {
     flex-direction: column;
     gap: 1rem;
@@ -9,15 +9,35 @@
     text-align: center;
   }
 
-  /* Ajuste de los enlaces del menú */
+  .card {
+    padding: 1.5rem;
+  }
+
+  .grid-layout {
+    grid-template-columns: 1fr; /* Celular: la foto y el texto se apilan en una columna */
+  }
+
+  /* Ocultar el menú por defecto en móvil */
   .nav-links {
+    display: none;
     flex-direction: column;
     gap: 0.75rem;
     width: 100%;
   }
 
-  /* Reducción de márgenes y paddings generales en móviles */
-  .card {
-    padding: 1.5rem;
+  /* Cuando se marca el checkbox, se despliega el menú */
+  #nav-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
+
+/* 2. Estilos para Computadoras y Tablets (mayores a 768px) */
+@media (min-width: 768px) {
+  .nav-toggle-label {
+    display: none; /* Ocultar el botón hamburguesa en PC */
+  }
+
+  .grid-layout {
+    grid-template-columns: 1fr 1fr; /* PC: dos columnas (texto y foto lado a lado) */
   }
 }
