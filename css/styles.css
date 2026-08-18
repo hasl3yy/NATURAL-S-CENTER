@@ -1,0 +1,9 @@
+/* 1. Variables y configuraciones base */
+@import url("variables.css");
+@import url("reset.css");
+
+/* 2componentes y estructura general */
+@import url("components.css");
+
+/* 3. Diseño adaptale segun pantalla */
+@import url("responsive.css");

@@ -1,0 +1,17 @@
+:root {
+  /* paleta de ccolores principal */
+  --color_primary: #1b4332; /* verde oscuro */
+  --color-secondary: #2d6a4f; /* verde medio */
+  --color-accent: #c5a8800; /* dorado */
+  --color-bg: #f8f9fa; /* fondo general claro */
+  --color-surface: #ffffff; /* fondos de tarjetas y contenedores */
+  --color-text: #212529; /* texto principal oscuro */
+  --color-text-muted: #6c757d; /* texto secundario o descriptivo*/
+
+  /* tipografia */
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* espaciado y transiciones */
+  --transition-speed: 0.3s ease;
+  --border-radius: 8px;
+}
