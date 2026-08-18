@@ -1,6 +1,6 @@
 /* --- DISEÑO RESPONSIVO Y MENÚ HAMBURGUESA --- */
 
-/* 1. Ocultar el checkbox de forma permanente en cualquier pantalla */
+/* 1. Ocultar el checkbox de forma permanente */
 #nav-toggle {
   display: none !important;
 }
@@ -9,10 +9,19 @@
 .nav-toggle-label {
   display: block;
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.2rem 0.5rem;
   user-select: none;
+}
+
+/* Contenedor del encabezado móvil (Logo a la izquierda, Hamburguesa a la derecha) */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
 }
 
 /* Ocultar los enlaces del menú por defecto en celulares */
@@ -22,11 +31,11 @@
   gap: 0.75rem;
   width: 100%;
   text-align: center;
-  padding: 0;
+  padding: 0 0 1rem 0;
   list-style: none;
 }
 
-/* La magia: cuando se hace clic en la hamburguesa, se despliega el menú */
+/* La magia: como el checkbox y el ul vuelven a ser hermanos directos, esto vuelve a funcionar */
 #nav-toggle:checked ~ .nav-links {
   display: flex !important;
 }
@@ -35,9 +44,7 @@
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem;
-    text-align: center;
+    padding: 0;
   }
 
   .card {
@@ -45,25 +52,36 @@
   }
 
   .grid-layout {
-    grid-template-columns: 1fr; /* Foto y texto en una sola columna vertical */
+    grid-template-columns: 1fr;
   }
 }
 
 /* 4. Estilos para Computadoras y Tablets (mayores a 768px) */
 @media (min-width: 768px) {
-  /* Ocultar el botón de hamburguesa en PC */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .nav-header {
+    width: auto;
+    padding: 0;
+  }
+
   .nav-toggle-label {
     display: none !important;
   }
 
-  /* Mostrar los enlaces de forma horizontal en PC */
   .nav-links {
     display: flex !important;
     flex-direction: row;
     width: auto;
+    gap: 1.5rem;
+    padding: 0;
   }
 
-  /* Regresar la sección de sobre nosotros a dos columnas */
   .grid-layout {
     grid-template-columns: 1fr 1fr;
   }

@@ -11,14 +11,16 @@
   <body>
     <header>
       <nav class="nav-container">
-        <div class="logo">NATURAL'S CENTER</div>
+        <!-- Solo el Logo y el Botón van dentro del header -->
+        <div class="nav-header">
+          <div class="logo">NATURAL'S CENTER</div>
+          <label for="nav-toggle" class="nav-toggle-label">☰</label>
+        </div>
 
-        <!-- Checkbox limpio sin estilos en línea -->
+        <!-- El checkbox va FUERA del header, justo antes del ul para que sean hermanos -->
         <input type="checkbox" id="nav-toggle" />
 
-        <!-- Label limpio sin display: block -->
-        <label for="nav-toggle" class="nav-toggle-label">☰</label>
-
+        <!-- El menú de enlaces -->
         <ul class="nav-links">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="sobre_nosotros.html">Sobre el Doctor</a></li>
