@@ -1,6 +1,34 @@
 /* --- DISEÑO RESPONSIVO --- */
 
-/* 1. Estilos exclusivos para celulares y pantallas pequeñas (hasta 768px) */
+/* 1. Estilos base / por defecto para móviles (y ocultar el checkbox del sistema) */
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: block;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Ocultar los enlaces del menú por defecto en móvil */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+
+/* Cuando se marca el checkbox en móvil, se despliega el menú */
+#nav-toggle:checked ~ .nav-links {
+  display: flex !important;
+}
+
+/* 2. Estilos específicos para pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
@@ -14,30 +42,26 @@
   }
 
   .grid-layout {
-    grid-template-columns: 1fr; /* Celular: la foto y el texto se apilan en una columna */
-  }
-
-  /* Ocultar el menú por defecto en móvil */
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 0.75rem;
-    width: 100%;
-  }
-
-  /* Cuando se marca el checkbox, se despliega el menú */
-  #nav-toggle:checked ~ .nav-links {
-    display: flex;
+    grid-template-columns: 1fr; /* Celular: la foto y el texto se apilan */
   }
 }
 
-/* 2. Estilos para Computadoras y Tablets (mayores a 768px) */
+/* 3. Estilos para Computadoras y Tablets (mayores a 768px) */
 @media (min-width: 768px) {
+  /* Ocultar por completo la hamburguesa en PC */
   .nav-toggle-label {
-    display: none; /* Ocultar el botón hamburguesa en PC */
+    display: none !important;
   }
 
+  /* Mostrar los enlaces de forma horizontal en PC */
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    width: auto;
+  }
+
+  /* La sección de sobre nosotros regresa a dos columnas */
   .grid-layout {
-    grid-template-columns: 1fr 1fr; /* PC: dos columnas (texto y foto lado a lado) */
+    grid-template-columns: 1fr 1fr;
   }
 }
