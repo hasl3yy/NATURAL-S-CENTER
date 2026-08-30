@@ -29,7 +29,7 @@
 
 /* --- NAVEGACIÓN (HEADER) --- */
 header {
-  background-color: var(--color-surface);
+  background-color: var(--color-primary);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -51,7 +51,7 @@ header {
 }
 
 .logo img {
-  height: 42px;
+  height: 70px;
   width: auto;
   display: block;
 }
@@ -63,13 +63,13 @@ header {
 
 .nav-links a {
   font-weight: 500;
-  color: var(--color-text);
+  color: var(--color-bg);
   transition: color var(--transition-speed);
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--color-primary);
+  color: var(--color-bg);
 }
 
 /* --- TARJETAS (CARDS) --- */
