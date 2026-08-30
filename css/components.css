@@ -46,9 +46,14 @@ header {
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 42px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {

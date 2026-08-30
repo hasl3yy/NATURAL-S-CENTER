@@ -54,6 +54,10 @@
   .grid-layout {
     grid-template-columns: 1fr;
   }
+
+  .logo img {
+    height: 36px;
+  }
 }
 
 /* 4. Estilos para Computadoras y Tablets (mayores a 768px) */

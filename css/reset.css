@@ -9,7 +9,7 @@
 
 /* Configuracion base del cuerpo */
 body {
-  font-family: var(--font-main);
+  font-family: var(--font-family);
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
